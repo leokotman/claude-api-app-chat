@@ -1,11 +1,17 @@
 [
   {
-    "task": "Write a Python function that extracts the AWS region from an S3 bucket URL in the format 's3://bucket-name.region.amazonaws.com'"
+    "task": "Parse an AWS S3 bucket name from a full S3 URI (e.g., 's3://my-bucket-name/path/to/object')",
+    "format": "regex",
+    "solution_criteria": "A regular expression that captures only the bucket name portion of an S3 URI, ignoring the 's3://' prefix and any path after the bucket name. Should match valid bucket names containing lowercase letters, numbers, and hyphens."
   },
   {
-    "task": "Create a JSON object that represents an AWS IAM policy allowing read-only access to a specific S3 bucket named 'my-data-bucket'"
+    "task": "Create a Python function that validates an AWS IAM role ARN format and returns True if valid, False otherwise",
+    "format": "python",
+    "solution_criteria": "A function that accepts a string parameter and returns a boolean. Should verify the ARN follows the pattern 'arn:aws:iam::ACCOUNT_ID:role/ROLE_NAME' where ACCOUNT_ID is 12 digits and ROLE_NAME contains valid characters. Returns True for valid ARNs, False for invalid ones."
   },
   {
-    "task": "Write a regular expression that matches valid AWS EC2 instance IDs in the format 'i-' followed by 8 or 17 hexadecimal characters"
+    "task": "Generate a JSON CloudFormation parameter object for an EC2 instance type with allowed values and a default value",
+    "format": "json",
+    "solution_criteria": "A valid JSON object defining a CloudFormation parameter that specifies an EC2 instance type, includes an AllowedValues property with at least 3 common instance types (e.g., t2.micro, t2.small, m5.large), includes a Default property, and proper Type and Description fields."
   }
 ]
