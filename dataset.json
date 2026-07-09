@@ -1,17 +1,161 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from a full S3 URI (e.g., 's3://my-bucket-name/path/to/object')",
-    "format": "regex",
-    "solution_criteria": "A regular expression that captures only the bucket name portion of an S3 URI, ignoring the 's3://' prefix and any path after the bucket name. Should match valid bucket names containing lowercase letters, numbers, and hyphens."
+    "prompt_inputs": {
+      "height": "168",
+      "weight": "58",
+      "goal": "marathon training with high energy availability",
+      "restrictions": "none"
+    },
+    "solution_criteria": [
+      "Meal plan totals 2800-3200 calories appropriate for marathon training",
+      "Includes 400-500g carbohydrates to support endurance performance",
+      "Provides 4-5 eating occasions distributed throughout the day",
+      "Meals are practical and compact with minimal preparation time"
+    ],
+    "task_description": "Write a compact concise 1 day meal for a single woman athlete",
+    "scenario": "Testing with a high-intensity endurance athlete (marathon runner) requiring elevated calorie and carbohydrate intake"
   },
   {
-    "task": "Create a Python function that validates an AWS IAM role ARN format and returns True if valid, False otherwise",
-    "format": "python",
-    "solution_criteria": "A function that accepts a string parameter and returns a boolean. Should verify the ARN follows the pattern 'arn:aws:iam::ACCOUNT_ID:role/ROLE_NAME' where ACCOUNT_ID is 12 digits and ROLE_NAME contains valid characters. Returns True for valid ARNs, False for invalid ones."
+    "prompt_inputs": {
+      "height": "168",
+      "weight": "68",
+      "goal": "muscle gain and strength development",
+      "restrictions": "none"
+    },
+    "solution_criteria": [
+      "Meal plan spans full day with 4-5 eating occasions",
+      "Protein distributed across meals (minimum 25g per meal for optimal muscle synthesis)",
+      "Total daily calories and macros support strength training and recovery",
+      "Includes specific meal timing around workouts for performance and recovery"
+    ],
+    "task_description": "Write a compact concise 1 day meal for a single woman athlete",
+    "scenario": "Testing with a strength-focused athlete (weightlifter) emphasizing protein distribution and muscle recovery"
   },
   {
-    "task": "Generate a JSON CloudFormation parameter object for an EC2 instance type with allowed values and a default value",
-    "format": "json",
-    "solution_criteria": "A valid JSON object defining a CloudFormation parameter that specifies an EC2 instance type, includes an AllowedValues property with at least 3 common instance types (e.g., t2.micro, t2.small, m5.large), includes a Default property, and proper Type and Description fields."
+    "prompt_inputs": {
+      "height": "168",
+      "weight": "62",
+      "goal": "maintain athletic performance with muscle retention",
+      "restrictions": "vegetarian, no nuts due to allergy"
+    },
+    "solution_criteria": [
+      "Meal plan totals approximately 2000-2200 calories aligned with athlete's maintenance needs",
+      "All meals use budget-friendly ingredients (dried beans, eggs, oats, seasonal vegetables, canned goods)",
+      "Respects vegetarian diet and nut allergy throughout all meals",
+      "Includes adequate protein distribution across meals for muscle retention"
+    ],
+    "task_description": "Write a compact concise 1 day meal for a single woman athlete",
+    "scenario": "Testing with a budget-conscious athlete with limited financial resources for meals"
+  },
+  {
+    "prompt_inputs": {
+      "height": "168 cm",
+      "weight": "62 kg",
+      "goal": "muscle gain and athletic performance",
+      "restrictions": "vegan, gluten-free, nut allergy"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals plus snacks for one full day",
+      "All foods are vegan and gluten-free with no nuts or tree nuts",
+      "Includes adequate protein from plant-based sources (legumes, tofu, seeds, grains) to support muscle gain",
+      "Practical and concise format suitable for a single athlete"
+    ],
+    "task_description": "Write a compact concise 1 day meal for a single woman athlete",
+    "scenario": "Testing with a vegan/plant-based athlete with dietary restrictions and alternative protein sources"
+  },
+  {
+    "prompt_inputs": {
+      "height": "172",
+      "weight": "65",
+      "goal": "muscle gain with sustained energy for endurance training",
+      "restrictions": "gluten-free, dairy-free, nut-free due to allergies"
+    },
+    "solution_criteria": [
+      "Meal plan spans one full day with breakfast, lunch, dinner, and snacks",
+      "All foods are gluten-free, dairy-free, and nut-free",
+      "Provides adequate protein and calories to support muscle gain and endurance training",
+      "Meals are practical and concise without excessive complexity"
+    ],
+    "task_description": "Write a compact concise 1 day meal for a single woman athlete",
+    "scenario": "Testing with an athlete managing food allergies (e.g., gluten-free, dairy-free, nut-free)"
+  },
+  {
+    "prompt_inputs": {
+      "height": "172 cm",
+      "weight": "65 kg",
+      "goal": "peak performance on competition day",
+      "restrictions": "none"
+    },
+    "solution_criteria": [
+      "Meal plan is compact and fits within a single day",
+      "Prioritizes carbohydrates and easily digestible foods for competition day energy",
+      "Includes 4-5 eating occasions spaced appropriately for athletic performance",
+      "Total daily calories and macronutrient distribution appropriate for competition day demands"
+    ],
+    "task_description": "Write a compact concise 1 day meal for a single woman athlete",
+    "scenario": "Testing with an athlete during competition day versus recovery day with different nutritional priorities"
+  },
+  {
+    "prompt_inputs": {
+      "height": "168 cm",
+      "weight": "58 kg",
+      "goal": "maintain lean muscle while maximizing power output for competitive sprinting",
+      "restrictions": "no dairy, prefers plant-based protein sources"
+    },
+    "solution_criteria": [
+      "Meal plan spans full day (breakfast, lunch, dinner, snacks) with appropriate caloric density for power-to-weight ratio maintenance",
+      "Includes adequate protein distribution across meals to support muscle maintenance without weight gain",
+      "All meals respect dairy-free and plant-based protein restrictions",
+      "Meals are practical and quick to prepare for an athlete's schedule"
+    ],
+    "task_description": "Write a compact concise 1 day meal for a single woman athlete",
+    "scenario": "Testing with a sport-specific athlete (e.g., gymnast or sprinter) requiring optimal power-to-weight ratio"
+  },
+  {
+    "prompt_inputs": {
+      "height": "172 cm",
+      "weight": "65 kg",
+      "goal": "muscle gain with minimal prep time",
+      "restrictions": "no dairy, no more than 15 minutes cooking time per meal"
+    },
+    "solution_criteria": [
+      "All meals require minimal cooking equipment (max 2 items) and under 15 minutes preparation",
+      "Daily caloric and macronutrient targets support muscle gain for a 65kg athlete",
+      "All meals are dairy-free and practical for a busy schedule"
+    ],
+    "task_description": "Write a compact concise 1 day meal for a single woman athlete",
+    "scenario": "Testing with minimal cooking equipment or time availability for meal preparation"
+  },
+  {
+    "prompt_inputs": {
+      "height": "168 cm",
+      "weight": "62 kg",
+      "goal": "endurance training performance maintenance",
+      "restrictions": "low-FODMAP diet due to IBS, no dairy, no gluten"
+    },
+    "solution_criteria": [
+      "Provides complete 1-day meal plan (breakfast, lunch, dinner, snacks) that is low-FODMAP compliant",
+      "Includes appropriate caloric intake and macronutrient distribution for a female endurance athlete",
+      "All meals are dairy-free and gluten-free",
+      "Plan is practical and concise (suitable for single serving preparation)"
+    ],
+    "task_description": "Write a compact concise 1 day meal for a single woman athlete",
+    "scenario": "Testing with an athlete requiring low-FODMAP or other digestive-sensitive meal options"
+  },
+  {
+    "prompt_inputs": {
+      "height": "172 cm",
+      "weight": "65 kg",
+      "goal": "muscle gain with endurance maintenance",
+      "restrictions": "halal diet, no pork, no alcohol-based ingredients, prefers Mediterranean and Middle Eastern cuisine"
+    },
+    "solution_criteria": [
+      "Meal plan respects halal dietary requirements throughout all meals and snacks",
+      "Total daily calories and macronutrients support muscle gain goal for a 65 kg athlete",
+      "Incorporates Mediterranean or Middle Eastern cuisine traditions in at least 2 meals",
+      "Provides practical, compact meal structure suitable for a single day"
+    ],
+    "task_description": "Write a compact concise 1 day meal for a single woman athlete",
+    "scenario": "Testing with cultural or religious dietary preferences (e.g., halal, kosher, specific cuisine traditions)"
   }
 ]
